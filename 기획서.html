@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>보이는 알고리즘!</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="%eb%b3%b4%ec%9d%b4%eb%8a%94-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98">보이는 알고리즘!</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">기획</td>
+<td style="text-align:right">장석민</td>
+</tr>
+<tr>
+<td style="text-align:center">개발</td>
+<td style="text-align:right">장석민</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%ea%b0%9c%ec%9a%94">개요</h2>
+<h3 id="%ea%b0%9c%eb%b0%9c-%eb%8f%99%ea%b8%b0">개발 동기</h3>
+<p>한 Youtube 채널에서 Google 입사 과정에서 가장 높을 관심을 받은 작품으로 알고리즘 시각화를 뽑았습니다. 공부와 포트폴리오 제작을 동시에 할 수 있는 방법으로 실력 향상에 도움이 될 것 같아 개발을 시작하게 되었습니다.</p>
+<h3 id="%ea%b0%9c%eb%b0%9c-%ea%b8%b0%ea%b0%84">개발 기간</h3>
+<p><strong>2019.09.30~2020.01.05</strong></p>
+<h3 id="%ea%b0%9c%eb%b0%9c-%eb%8f%84%ea%b5%ac">개발 도구</h3>
+<ul>
+<li>Godot Engine 3.0</li>
+<li>Krita 4.2.0</li>
+<li>Inkscape 0.92.3</li>
+<li>Visual Paradigm Community 16.0</li>
+</ul>
+<h2 id="%ea%b0%9c%eb%b0%9c-%ec%9d%bc%ec%a0%95">개발 일정</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">선정 조건 구체화</td>
+<td style="text-align:center">2019.09.30~2019.11.10</td>
+</tr>
+<tr>
+<td style="text-align:left">시각적으로 표현할 알고리즘 선정</td>
+<td style="text-align:center">2019.09.30~2019.11.10</td>
+</tr>
+<tr>
+<td style="text-align:left">Mock-up 작업</td>
+<td style="text-align:center">2019.09.30~2019.11.10</td>
+</tr>
+<tr>
+<td style="text-align:left">Godot Engine 연습</td>
+<td style="text-align:center">2019.09.30~2019.11.10</td>
+</tr>
+<tr>
+<td style="text-align:left">구현 목록 명세</td>
+<td style="text-align:center">2019.11.11~2019.11.24</td>
+</tr>
+<tr>
+<td style="text-align:left">소프트웨어 시스템 설계</td>
+<td style="text-align:center">2019.11.11~2019.11.24</td>
+</tr>
+<tr>
+<td style="text-align:left">구현</td>
+<td style="text-align:center">2019.11.25~2019.12.22</td>
+</tr>
+<tr>
+<td style="text-align:left">마무리</td>
+<td style="text-align:center">2019.12.23~2020.01.05</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%ea%b2%b0%ea%b3%bc%eb%ac%bc">결과물</h2>
+<h3 id="%ec%84%a0%ec%a0%95-%ec%a1%b0%ea%b1%b4">선정 조건</h3>
+<ul>
+<li>도형을 이용하여 표현이 가능하다.</li>
+<li>표현 후 동작 구조를 쉽게 알 수 있다.</li>
+<li>흥미를 끌 수 있는 소재이다.</li>
+<li>개발 기간 4주 내에 구현이 가능하다.</li>
+<li>상호작용이 가능하다.</li>
+<li>적은 양의 데이터로 표현이 가능하다.</li>
+<li>구현된 자료가 적다.</li>
+</ul>
+<h3 id="%ec%84%a0%ec%a0%95%eb%90%9c-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98">선정된 알고리즘</h3>
+<ul>
+<li>Trie</li>
+<li>Gift Wrapping Algorithm</li>
+<li><s>Fortune's Algorithm</s></li>
+</ul>
+<h3 id="%ec%84%a0%ec%a0%95-%ec%9d%b4%ec%9c%a0">선정 이유</h3>
+<h4 id="trie">Trie</h4>
+<ul>
+<li>트리 구조로 도형을 이용하여 표현이 간단하다.</li>
+<li>빈도수 기반 자동 완성으로 사용 가능하여 짧은 문단을 이용하여 동작을 확인할 수 있다.</li>
+<li>자동 완성 구현은 충분히 흥미를 끌 수 있다고 생각한다.</li>
+</ul>
+<h4 id="gift-wrapping-alghorithm">Gift Wrapping Alghorithm</h4>
+<ul>
+<li>2차원에서 동작하는 알고리즘으로 평면에 표현하기 적합하다.</li>
+<li>조금 복잡할 것으로 예상되나 충분한 상호작용이 가능할 것으로 예상된다.</li>
+</ul>
+<h4 id="fortunes-algorithm">Fortune's Algorithm</h4>
+<ul>
+<li>구현된 자료가 적은 것을 고려했지만 너무 적어 알고리즘 자체를 알아내기도 힘들다.</li>
+</ul>
+<h3 id="%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ec%97%b0%ea%b5%ac">알고리즘 연구</h3>
+<h4 id="trie-1">Trie</h4>
+<pre><code class="language-python"><div><span class="hljs-comment"># 트리를 구성할 노드</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span><span class="hljs-params">()</span>:</span>
+   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+       self.children = dict()
+       self.value = <span class="hljs-number">0</span>
+
+
+<span class="hljs-comment"># key를 이용하여 trie에 해당 key가 존재하는 지 확인</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">find</span><span class="hljs-params">(node: Node, key: str)</span>:</span>
+    <span class="hljs-keyword">for</span> char <span class="hljs-keyword">in</span> key:
+        <span class="hljs-keyword">if</span> char <span class="hljs-keyword">in</span> node.children:
+            node = node.children[char]
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">return</span> node.value
+
+
+<span class="hljs-comment"># key를 이용하여 key를 삽입하고 값을 변화시킴</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">insert</span><span class="hljs-params">(node: Node, key: str)</span>:</span>
+    <span class="hljs-keyword">for</span> char <span class="hljs-keyword">in</span> key:
+        <span class="hljs-keyword">if</span> char <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> node.children:
+            node.children[char] = Node()
+        node = node.children[char]
+    node.value += <span class="hljs-number">1</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    root = Node()
+    test_string = <span class="hljs-string">'cause carry carrer cast cast calm cast care calm'</span>
+
+    <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> test_string.split():
+        insert(root, s)
+
+
+    <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> root.children.items():
+        print(k, v.value)
+        <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> v.children.items():
+            print(<span class="hljs-string">''</span>, k, v.value)
+            <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> v.children.items():
+                print(<span class="hljs-string">'-'</span>, k, v.value)
+                <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> v.children.items():
+                    print(<span class="hljs-string">'--'</span>, k, v.value)
+                    <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> v.children.items():
+                        print(<span class="hljs-string">'---'</span>, k, v.value)
+                        <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> v.children.items():
+                            print(<span class="hljs-string">'----'</span>, k, v.value)
+</div></code></pre>
+<pre><code><div>c 0
+ a 0
+- u 0
+-- s 0
+--- e 1
+- r 0
+-- r 0
+--- y 1
+--- e 0
+---- r 1
+-- e 1
+- s 0
+-- t 3
+- l 0
+-- m 2
+</div></code></pre>
+<p><img src="file:///c:\Users\Jang_SM\Documents\PIMMProject\trie.png" alt="Trie"></p>
+<h4 id="gift-wrapping-algorithm-jarvis-marching">Gift Wrapping Algorithm (Jarvis marching)</h4>
+<pre><code class="language-python"><div><span class="hljs-comment"># 사용할 점 클래스</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vertex</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, x=<span class="hljs-number">0.0</span>, y=<span class="hljs-number">0.0</span>)</span>:</span>
+        self.x = x
+        self.y = y
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__sub__</span><span class="hljs-params">(self, rhs)</span>:</span>
+        <span class="hljs-keyword">return</span> Vertex(self.x - rhs.x, self.y - rhs.y)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__repr__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">f'(<span class="hljs-subst">{self.x}</span>, <span class="hljs-subst">{self.y}</span>)'</span>
+
+
+<span class="hljs-comment"># 2차원 벡터곱</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">norm_cross</span><span class="hljs-params">(lhs :Vertex, rhs :Vertex)</span>:</span>
+    <span class="hljs-keyword">return</span> lhs.x * rhs.y - lhs.y * rhs.x
+
+
+<span class="hljs-comment"># ccw는 세 점이 반시계 방향일 때 1 반환</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ccw</span><span class="hljs-params">(vertex1, vertex2, vertex3)</span>:</span>
+    lhs = vertex2 - vertex1
+    rhs = vertex3 - vertex2
+    c = norm_cross(lhs, rhs)
+    
+    <span class="hljs-keyword">if</span> c &lt; <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>
+
+
+<span class="hljs-comment"># 본격 jarvis march</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">jarvis</span><span class="hljs-params">(v)</span>:</span>
+    h = []
+    v.sort(key=<span class="hljs-keyword">lambda</span> vtx: vtx.x)
+    
+    point_on_hull = v[<span class="hljs-number">0</span>]
+    i = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        h.append(point_on_hull)
+        endpoint = v[<span class="hljs-number">0</span>]
+        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, len(v)):
+            <span class="hljs-keyword">if</span> endpoint == point_on_hull <span class="hljs-keyword">or</span> ccw(h[i], endpoint, v[j]) == <span class="hljs-number">-1</span>:
+                endpoint = v[j]
+        i = i + <span class="hljs-number">1</span>
+        point_on_hull = endpoint
+        <span class="hljs-keyword">if</span> endpoint == h[<span class="hljs-number">0</span>]:
+            <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">return</span> h
+</div></code></pre>
+<p><img src="file:///c:\Users\Jang_SM\Documents\PIMMProject\jarvis.png" alt="jarvis"></p>
+<h2 id="%ec%9d%b4%ed%9b%84-%ec%a7%84%ed%96%89-%ec%98%88%ec%a0%95">이후 진행 예정</h2>
+<ul>
+<li>목업 작업 완료</li>
+<li>시스템 분석 및 명세</li>
+<li>개발!</li>
+<li>마무리!!</li>
+</ul>
+
+    </body>
+    </html>
