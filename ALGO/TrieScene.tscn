@@ -1,0 +1,73 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.247059, 0.247059, 0.247059, 1 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+margin_left = 531.0
+margin_top = 239.0
+margin_right = 1904.0
+margin_bottom = 1065.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+margin_left = 44.0
+margin_top = 22.0
+margin_right = 1859.0
+margin_bottom = 102.0
+
+[node name="ColorRect3" type="ColorRect" parent="Control"]
+margin_left = 611.0
+margin_top = 314.0
+margin_right = 970.0
+margin_bottom = 389.0
+color = Color( 0.494118, 0.494118, 0.494118, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Control"]
+margin_left = 610.073
+margin_top = 377.529
+margin_right = 969.073
+margin_bottom = 567.529
+color = Color( 0.807843, 0.807843, 0.807843, 0.588235 )
+
+[node name="ColorRect4" type="ColorRect" parent="Control"]
+margin_left = 40.0
+margin_top = 106.0
+margin_right = 1886.0
+margin_bottom = 221.0
+
+[node name="ColorRect5" type="ColorRect" parent="Control"]
+margin_left = 27.0
+margin_top = 252.0
+margin_right = 483.0
+margin_bottom = 1075.0
+
+[node name="ColorRect7" type="ColorRect" parent="Control"]
+margin_left = 40.0
+margin_top = 978.0
+margin_right = 178.0
+margin_bottom = 1040.0
+color = Color( 0.568627, 0.568627, 0.568627, 1 )
+
+[node name="ColorRect8" type="ColorRect" parent="Control"]
+margin_left = 270.154
+margin_top = 986.852
+margin_right = 408.154
+margin_bottom = 1048.85
+color = Color( 0.568627, 0.568627, 0.568627, 1 )
+
+[node name="ColorRect9" type="ColorRect" parent="Control"]
+margin_left = 1704.19
+margin_top = 137.052
+margin_right = 1842.19
+margin_bottom = 199.052
+color = Color( 0.568627, 0.568627, 0.568627, 1 )
