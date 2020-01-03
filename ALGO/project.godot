@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "TextureRect",
+"class": "TrieNode",
+"language": "GDScript",
+"path": "res://TrieNode.gd"
+} ]
 _global_script_class_icons={
-
+"TrieNode": ""
 }
 
 [application]
