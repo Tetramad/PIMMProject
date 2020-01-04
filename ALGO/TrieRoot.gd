@@ -2,10 +2,10 @@ extends Control
 
 onready var node = preload("res://TrieNode.tscn")
 
-export(String) var test_word
-export(bool) var testit = false
+signal insert_completed
 
 var root = null
+
 
 func _ready():
 	root = node.instance()
@@ -13,12 +13,6 @@ func _ready():
 	root.set_character('ROOT')
 	root.set_position(Vector2.ZERO)
 	relocate()
-
-func _process(delta):
-	if testit:
-		insert(test_word)
-		test_word = ""
-		testit = false
 
 func insert(word: String):
 	var child_node = root.get_child_node()
@@ -42,6 +36,14 @@ func insert(word: String):
 		children = child_node.get_children()
 	child_node.get_parent().increase_frequency()
 	relocate()
+	emit_signal("insert_completed")
+
+
+func clear():
+	var child_node = root.get_child_node()
+	for child in child_node.get_children():
+		child.queue_free()
+
 
 func relocate():
 	root.relocate(Vector2.ZERO, 0.0, 2 * PI)

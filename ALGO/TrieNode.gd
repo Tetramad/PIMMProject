@@ -66,7 +66,7 @@ func relocate(pivot: Vector2, direction: float, sector_angle: float):
 	var base = direction - sector_angle/2
 	for i in range(children.size()):
 		var _direction = base + (sector_angle/(children.size() + 1)) * (i + 1)
-		var _pivot = 4 * radius * Vector2(cos(_direction), sin(_direction))
+		var _pivot = 10 * radius * Vector2(cos(_direction), sin(_direction)).normalized()
 		children[i].relocate(_pivot, _direction, max(sector_angle/2, PI/10))
 
 
